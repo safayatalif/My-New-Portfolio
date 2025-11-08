@@ -1,1 +1,1 @@
-# ethan-portfolio-starter# My-New-Portfolio
+# My-New-Portfolio
