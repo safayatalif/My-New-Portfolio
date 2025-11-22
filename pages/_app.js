@@ -10,16 +10,16 @@ import { useRouter } from 'next/router';
 // framer motion
 import { AnimatePresence, motion } from 'framer-motion';
 
-
-
-
-
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  // vedio duration = 28.27;
   return (
     <Layout>
-      <Component {...pageProps} />
+      <AnimatePresence mode='wait'>
+        <motion.div key={router.route} className='h-full'>
+          <Transition></Transition>
+          <Component {...pageProps} />
+        </motion.div>
+      </AnimatePresence>
     </Layout>
   );
 }
