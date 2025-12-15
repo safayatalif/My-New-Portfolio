@@ -88,8 +88,28 @@ const aboutData = [
   },
 ];
 
+import Avatar from "../../components/Avatar";
+import Circles from "../../components/Circles";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
+import { useState } from "react";
+
 const About = () => {
-  return <div>About</div>;
+  const [index, setIndex] = useState(0);
+  return (
+    <div>
+      <Circles></Circles>
+      <motion.div
+        variants={fadeIn('up', 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:-bottom-0 lg:right-[8%]"
+      >
+        <Avatar></Avatar>
+      </motion.div>
+
+    </div>
+  );
 };
 
 export default About;
