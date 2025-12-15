@@ -46,11 +46,11 @@ const Home = () => {
       {/* bg image  */}
       <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
         {/* particles */}
-        <div>particles</div>
+        <ParticlesContainer></ParticlesContainer>
         {/* avatar image */}
-        <div className="">
+        <motion.div variants={fadeIn('up', 0.5)} initial="hidden" whileInView={"show"} className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:-bottom-0 lg:right-[8%]">
           <Avatar></Avatar>
-        </div>
+        </motion.div>
       </div>
 
 
