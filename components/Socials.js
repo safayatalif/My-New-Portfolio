@@ -4,7 +4,7 @@ import { RiYoutubeLine, RiFacebookLine, RiInstagramLine, RiLinkedinLine, RiGithu
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-lg">
+    <div className="flex items-center  md:gap-x-5 gap-x-2 text-lg">
       <Link href={'#'} className="hover:text-accent transition-all duration-300">
         <RiYoutubeLine />
       </Link>

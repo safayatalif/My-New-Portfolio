@@ -4,14 +4,17 @@ import Socials from "../components/Socials";
 
 
 
-const Header = () => {
+const Header = ({ visible }) => {
   return (
-    <header className="absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]">
+    <header
+      className={`bg-black/5 absolute z-30 w-full flex items-center px-2 xl:px-0 h-[40px] xl:h-[50px] transition-all duration-300 ${visible ? 'top-0' : '-top-[100px]'
+        }`}
+    >
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8 my-4">
+        <div className="flex flex-row lg:flex-row justify-between items-center gap-y-4 py-4 my-2">
           {/* logo */}
           <Link href="/">
-            <Image src="/alif-logo-3.png" alt="" width={220} height={38} priority={true} />
+            <Image src="/logo.svg" alt="" width={180} height={30} priority={true} />
           </Link>
           <Socials></Socials>
         </div>
