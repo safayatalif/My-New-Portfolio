@@ -7,7 +7,7 @@ import Socials from "../components/Socials";
 const Header = ({ visible }) => {
   return (
     <header
-      className={`bg-black/5 absolute z-30 w-full flex items-center px-2 xl:px-0 h-[40px] xl:h-[50px] transition-all duration-300 ${visible ? 'top-0' : '-top-[100px]'
+      className={` absolute z-30 w-full flex items-center px-2 xl:px-0 h-[40px] xl:h-[50px] transition-all duration-300 ${visible ? 'top-0' : '-top-[100px]'
         }`}
     >
       <div className="container mx-auto">
