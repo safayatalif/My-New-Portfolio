@@ -39,12 +39,12 @@ const Home = () => {
                         Safayat Hossen <span className="text-accent">Alif</span>
                     </h1>
                     <p className="tracking-widest mb-4 text-sm md:text-base uppercase text-white/70">
-                        Software Engineer // Product Designer
+                        Full Stack Engineer // Healthcare Solutions
                     </p>
 
-                    {/* <div className="flex justify-center mt-6">
+                    <div className="flex justify-center mt-6">
             <ProjectsBtn />
-          </div> */}
+          </div>
                 </motion.div>
 
                 {/* Brands/Footer Section */}

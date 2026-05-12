@@ -13,8 +13,8 @@ const Header = ({ visible }) => {
       <div className="container mx-auto">
         <div className="flex flex-row lg:flex-row justify-between items-center gap-y-4 py-4 my-2">
           {/* logo */}
-          <Link href="/">
-            <Image src="/logo.svg" alt="" width={180} height={30} priority={true} />
+          <Link href="/" aria-label="Home">
+            <Image src="/logo.svg" alt="Alif logo" width={180} height={30} priority className="w-auto h-auto" />
           </Link>
           <Socials></Socials>
         </div>
